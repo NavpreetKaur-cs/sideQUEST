@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Outfit:wght@400;500;600;700&display=swap");
+
+:root {
+  font-family: "Manrope", "Segoe UI", sans-serif;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color-scheme: dark;
+  color: #f1f5ef;
+  background: #07070a;
+  --ink: #090a0f;
+  --panel: #101014;
+  --paper: #f2eef1;
+  --muted: #9298a8;
+  --acid: #8b5cf6;
+  --coral: #67d9f7;
+  --surface: #111115;
+  --surface-raised: #191318;
+  --line: rgb(148 160 190 / 12%);
+  --glow: rgb(139 92 246 / 18%);
+  --font-display: "Outfit", "Manrope", sans-serif;
+  --font-mono: "Manrope", Consolas, monospace;
+}
+
+html { min-width: 320px; min-height: 100%; background: var(--ink); }
+body { min-width: 320px; min-height: 100vh; margin: 0; background: var(--ink); color: var(--paper); }
+button, input, textarea, select { font: inherit; }
+input:not([type="button"]):not([type="submit"]):not([type="checkbox"]):not([type="radio"]), textarea { cursor: text; }
+button:disabled, [aria-disabled="true"] { cursor: not-allowed; }
+input[type="file"]::file-selector-button { cursor: pointer; }
+button:focus-visible, a:focus-visible { outline: 2px solid var(--acid); outline-offset: 3px; }
+a { color: inherit; }
+::selection { background: var(--acid); color: var(--ink); }
+

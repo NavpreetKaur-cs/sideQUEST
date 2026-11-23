@@ -1,0 +1,15 @@
+{
+  "private": true,
+  "scripts": {
+    "dev": "concurrently -n SERVER,CLIENT -c magenta,cyan \"npm --prefix server run dev\" \"npm --prefix client run dev\"",
+    "dev:game-server": "node scripts/start-godot-server.mjs",
+    "dev:server": "npm --prefix server run dev",
+    "dev:client": "npm --prefix client run dev"
+  },
+  "dependencies": {
+    "socket.io": "^4.8.4"
+  },
+  "devDependencies": {
+    "concurrently": "^10.0.7"
+  }
+}
